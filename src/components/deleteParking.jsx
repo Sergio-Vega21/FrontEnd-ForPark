@@ -38,7 +38,7 @@ const DeleteParking = () => {
     setParqueaderos(newParqueaderos);
   
     try {
-      const response = await client.delete(`http://localhost:3000/api/parqueaderos/${id}`);
+      const response = await client.delete(`https://back-end-four-park.vercel.app/api/parqueaderos/${id}`);
       if (response.status !== 200) {
         throw new Error("Error deleting parqueadero");
       }

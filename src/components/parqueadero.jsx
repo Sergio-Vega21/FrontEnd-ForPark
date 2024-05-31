@@ -22,7 +22,7 @@ const Parqueadero = () => {
   useEffect(() => {
     const fetchParqueaderos = async () => {
       try {
-        const response = await client.get("http://localhost:3000/api/parqueaderos");
+        const response = await client.get("https://back-end-four-park.vercel.app/api/parqueaderos");
         setParqueaderos(response.data);
       } catch (error) {
         console.error(
