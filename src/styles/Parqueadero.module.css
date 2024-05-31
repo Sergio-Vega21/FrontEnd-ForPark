@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.parqueadero {
+  background: radial-gradient(circle, hsla(180, 46%, 87%, 1) 0%, hsla(198, 69%, 89%, 1) 100%);
+  padding: 20px;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.logocontainer {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: #121214;
+  border: none;
+  cursor: pointer;
+  font-family: "Quicksand", serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navLinks a {
+  color: #121214;
+  margin-right: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navLinks a:last-child {
+  margin-right: 0;
+}
+
+.formcontainer input[type="number"]{
+  border: none; 
+  border-bottom: 2px solid #1f1f53; 
+  background: transparent; 
+  margin: 5px; 
+  padding: 8px; 
+  width: 100%; 
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Quicksand", serif; 
+  
+}
+
+.Reservationbutton {
+  background-color: #A91127;
+  color: #f3f2ed;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Quicksand", serif;
+  font-weight: 600;
+  border-radius: 6%;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.Gerentebutton {
+  background-color: #A91127;
+  color: #f3f2ed;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Quicksand", serif;
+  font-weight: 600;
+  border-radius: 6%;
+  position: absolute;
+  top: 10px;
+  right: 165px;
+}
+
+.Gerentebutton:hover,
+.Reservationbutton:hover {
+  background-color: #bc5878;
+}
+
+.BannerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff1c1;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1300px;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+}
+.BannerContainer input[type="number"] {
+  border: none; 
+  border-bottom: 2px solid #886d15; 
+  background: transparent; 
+  margin: 5px; 
+  padding: 8px; 
+  width: 15%; 
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Quicksand", serif; 
+  
+}
+
+.BannerText {
+  font-family: "Quicksand", serif;
+  color: #121214;
+  width: 100%;
+}
+
+.MainBannerText {
+  font-weight: 1000;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.SecondBannerText {
+  font-weight: 300;
+}
+
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Quicksand", serif;
+}
+
+.tableContainer th,
+.tableContainer td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.tableContainer th {
+  background-color: #f3f2ed;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tableContainer tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tableContainer tr:hover {
+  background-color: #ddd;
+}
+
+.tableContainer td {
+  text-align: center;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.deleteButton {
+  background: transparent;
+  border: transparent;
+  width: 40px;
+  color: #e3b055;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .logo {
+    width: 250px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 10px;
+  }
+
+  .navLinks {
+    margin-bottom: 10px;
+  }
+
+  .Gerentebutton {
+    top: initial;
+    right: initial;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .Reservationbutton {
+    top: initial;
+    right: initial;
+    position: relative;
+  }
+
+  .BannerContainer {
+    width: 90%;
+  }
+
+  .MainBannerText {
+    font-size: 1.2em;
+  }
+
+  .tableContainer th, .tableContainer td {
+    padding: 6px;
+  }
+
+  .mapContainer {
+    height: 300px;
+    width: 1000px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 200px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 10px;
+  }
+
+  .navLinks {
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navLinks a {
+    margin: 5px 0;
+  }
+
+  .Gerentebutton {
+    top: initial;
+    right: initial;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .Reservationbutton {
+    top: initial;
+    right: initial;
+    position: relative;
+  }
+
+  .BannerContainer {
+    width: 95%;
+  }
+
+  .MainBannerText {
+    font-size: 1em;
+  }
+
+  .tableContainer th, .tableContainer td {
+    padding: 4px;
+    font-size: 12px;
+  }
+
+  .mapContainer {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 150px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 10px; /* Reduce padding for smaller screens */
+    margin-bottom: 20px; /* Add margin-bottom to create space below the navbar */
+  }
+
+  .navLinks {
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navLinks a {
+    margin: 5px 0;
+  }
+
+  .Gerentebutton,
+  .Reservationbutton {
+    top: initial;
+    right: initial;
+    position: relative;
+    font-size: 12px;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+  }
+
+  .BannerContainer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .MainBannerText {
+    font-size: 0.8em;
+  }
+
+  .tableContainer th, .tableContainer td {
+    padding: 2px;
+    font-size: 10px;
+  }
+
+  .mapContainer {
+    height: 200px;
+    width: 100px;
+  }
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.CreditCard {
+  background: radial-gradient(circle, hsla(5, 71%, 40%, 1) 51%, hsla(5, 87%, 88%, 1) 100%);
+  padding: 20px;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.logocontainer {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  max-width: 400px;
+  height: auto;
+  max-height: 400px;
+}
+
+.formcontainer {
+  max-height: 80vh; 
+  position: relative;
+  z-index: 1;
+  padding: 4vw;
+  border-radius: 1vw;
+  overflow-y: auto; 
+  background-color: rgba(217, 153, 163, 0.75);
+  backdrop-filter: blur(2vw);
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  width: 90%;
+  max-width: 600px;
+  margin: 5% auto;
+  color: #531f1f;
+  text-align: center;
+}
+
+.formcontent {
+  margin-top: 5px;
+}
+
+.formcontainer input[type="email"],
+.formcontainer input[type="text"],
+.formcontainer input[type="password"] {
+  border: none;
+  border-bottom: 2px solid #531f1f;
+  background: transparent;
+  margin: 3px 0;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Quicksand", serif;
+}
+
+.formcontainer button[type="submit"] {
+  background-color: #AF291E;
+  color: #531f1f;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 1vw;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Quicksand", serif;
+  font-size: 16px;
+  margin-top: 25px; /* Mayor espacio superior */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formcontainer button[type="submit"]:hover {
+  background-color: #e37a91;
+}
+
+.formcontainer button[type="submit"]:disabled {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.lock-icon {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 100px) { /* Celulares */
+  .formcontainer {
+    width: 80%;
+    padding: 10vw;
+    border-radius: 5vw;
+    backdrop-filter: blur(3vw);
+  }
+  .formcontent {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { /* Tablets */
+  .formcontainer {
+    width: 24rem;
+    padding: 8vw;
+    border-radius: 2vw;
+    backdrop-filter: blur(2vw);
+    margin-bottom: 2vw;
+  }
+  .formcontent {
+    font-size: 2vw;
+  }
+  .formcontainer p {
+    margin-top: 2vw;
+  }
+}
+
+@media screen and (min-width: 1024px) { /* Escritorio */
+  .formcontainer {
+    width: 27rem;
+    padding: 3vw;
+    border-radius: 1vw;
+    backdrop-filter: blur(3vw);
+    margin-bottom: 2vw;
+  }
+}

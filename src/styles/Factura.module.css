@@ -1,0 +1,73 @@
+/* Factura.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #f0f6fc; /* Fondo azul claro */
+}
+
+.Factura {
+  background: #1f3653; /* Cuadro azul oscuro */
+  padding: 20px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.formcontainer {
+  padding: 20px;
+  border-radius: 100px;
+  background-color: #3a589b; /* Azul oscuro */
+  font-family: "Quicksand", serif;
+  color: #c6e5e5; /* Blanco */
+  text-align: center;
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 800px; /* Ajusta el ancho máximo según tu diseño */
+  margin: 20px; /* Ajusta el margen según tu diseño */
+}
+
+.formcontainer h1 {
+  margin-bottom: 20px;
+}
+
+.formcontainer label {
+  display: block;
+  margin-bottom: -70px;
+}
+
+.formcontainer input {
+  border: none;
+  border-bottom: 2px solid #c6e5e5; /* Blanco */
+  background: transparent;
+  margin: 5px 0;
+  padding: 8px;
+  width: calc(100% - 16px);
+  box-sizing: border-box;
+  outline: none;
+}
+
+.formcontainer button[type="submit"], .exitButton {
+  background-color: #1f3653; /* Azul oscuro */
+  color: #c6e5e5; /* Blanco */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Quicksand", serif;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.formcontainer button[type="submit"]:hover, .exitButton:hover {
+  background-color: #3cb0ee; /* Azul claro */
+}

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.Homepage{
+  background: radial-gradient(circle, hsla(180, 46%, 87%, 1) 0%, hsla(198, 69%, 89%, 1) 100%);
+    padding: 20px;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logocontainer{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+      
+.logo {
+    width: 300px; 
+    height: auto;
+    max-width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+ }
+
+ .navLinks {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color:#121214;
+    border: none;
+    cursor:pointer;
+    font-family: "Quicksand", serif;
+    font-size: 18px;
+    text-decoration: none;
+   
+  }
+
+.navLinks a {
+  color: #121214; 
+  margin-right: 10px; 
+  font-weight: 600;
+  text-decoration: none;
+}
+.navLinks a:last-child {
+    margin-right: 0; 
+}
+  
+.Reservationbutton{
+    background-color: #A91127;
+    color: #f3f2ed;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute; 
+    top: 10px; /* Añadido */
+    right: 20px; /* Añadido */
+    font-family: "Quicksand", serif;
+    font-weight: 600;
+    border-radius: 6%;
+  }
+  .Loginbutton{
+    background-color: #A91127;
+    color: #f3f2ed;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute; 
+    top: 10px; /* Añadido */
+    right: 350px; /* Añadido */
+    font-family: "Quicksand", serif;
+    font-weight: 600;
+    border-radius: 6%;
+  }
+  .Gerentebutton{
+    background-color: #A91127;
+    color: #f3f2ed;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute; 
+    top: 10px; /* Añadido */
+    right: 165px; /* Añadido */
+    font-family: "Quicksand", serif;
+    font-weight: 600;
+    border-radius: 6%;
+  }
+  .Gerentebutton:hover {
+    background-color: #bc5878;
+  }
+      
+  .Reservationbutton:hover {
+    background-color: #bc5878;
+  }
+
+  .BannerContainer {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    background: linear-gradient(90deg, hsla(2, 70%, 43%, 1) 0%, hsla(24, 78%, 82%, 1) 100%);
+    border-radius: 20px; 
+    border-bottom-right-radius: 120px;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 40px 60px;
+  }
+  
+  .SuzukiImage {
+    width: 300px;
+    height: auto;
+    margin-left: 20px;
+  }
+  
+  .BannerText {
+    margin: 0;
+    margin-left:20px;
+    font-family: "Quicksand",serif;
+    color:#f3f2ed;
+  }
+  .MainBannerText{
+    font-weight: 1000;
+    font-size: 200%;
+  }
+  .SecondBannerText{
+    font-weight: 300;
+  }
+
+  .BannerButtons {
+    display: flex;
+    gap: 10px; 
+    margin-top: 20px; 
+  }
+  .BannerButton {
+    background-color: #A91127;
+    color: #f3f2ed;
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Quicksand", serif;
+    font-weight: 600;
+    border-radius: 8%;
+  }
+  .BannerButton:hover {
+    background-color: #bc5878;
+  }
+  .TextConth2 {
+    font-family: "Quicksand", serif;
+    font-weight: 1000;
+    font-size: 200%;
+    margin: 0;
+    padding: 20px 0;
+    word-wrap: break-word;
+  }
+  
+  .TextConth3 {
+    font-family: "Quicksand", serif;
+    font-weight: 600;
+    font-size: 120%;
+    margin: 0;
+    padding: 20px 0;
+    word-wrap: break-word;
+  }
+  
+  .BottomPart {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+  }
+  
+  .TextContainer {
+    flex: 1 1 30%; 
+    padding-right: 20px; 
+  }
+  
+  .smallBanners {
+    flex: 1 1 50%; 
+    display: flex;
+    flex-direction: row; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+
+  }
+  
+  .smallBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f2ed;
+    box-shadow: 0px 0px 20px rgba(228, 136, 136, 0.4);
+    border-radius: 8%;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 250px;
+    flex: 1 1 250px; 
+  }
+  
+  .smallBanner img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .bannerText {
+    text-align: center;
+    word-wrap: break-word;
+    width: 100%;
+  }
+  
+  .smallBanner h2, .smallBanner p {
+    margin: 0;
+    font-family: "Quicksand", serif;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center; 
+  }
+  
+  @media (max-width: 768px) {
+    .BottomPart {
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    .TextContainer, .smallBanners {
+      width: 100%; 
+      padding: 0 20px; 
+    }
+  
+    .smallBanners {
+      flex-direction: row; 
+      flex-wrap: wrap; 
+      justify-content: center; 
+    }
+  
+    .smallBanner {
+      flex: 1 1 100%; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      width: 60px;
+    }
+  
+    .navLinks {
+      align-items: flex-start;
+    }
+  }
+  
+  
+  
+  
+  

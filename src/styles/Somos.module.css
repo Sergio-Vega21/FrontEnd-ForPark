@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.Somos{
+  background: radial-gradient(circle, hsla(180, 46%, 87%, 1) 0%, hsla(198, 69%, 89%, 1) 100%);
+  padding: 20px;
+  min-height: 100vh;
+  background-size: cover;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.logocontainer{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+    
+.logo {
+  width: 300px; 
+  height: auto;
+  max-width: 100%;
+}
+ nav{
+  display: flex;
+  align-items: center;
+ }
+ 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navLinks {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color:#121214;
+  border: none;
+  cursor:pointer;
+  font-family: "Quicksand", serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.arreglo{
+  margin: 0 auto;
+  align-items: center;
+  background-color: transparent;
+  color:#121214;
+  border: none;
+  cursor:pointer;
+  font-family: "Quicksand", serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navLinks a {
+  color: #121214; 
+  margin-right: 10px; 
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navLinks a:last-child {
+  margin-right: 0; 
+}
+
+.Reservationbutton{
+  background-color: #A91127;
+  color: #f3f2ed;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: absolute; 
+  top: 10px; /* Añadido */
+  right: 20px; /* Añadido */
+  font-family: "Quicksand", serif;
+  font-weight: 600;
+  border-radius: 6%;
+}
+
+.Gerentebutton{
+  background-color: #A91127;
+  color: #f3f2ed;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: absolute; 
+  top: 10px; /* Añadido */
+  right: 165px; /* Añadido */
+  font-family: "Quicksand", serif;
+  font-weight: 600;
+  border-radius: 6%;
+}
+
+.Gerentebutton:hover {
+  background-color: #bc5878;
+}
+  
+.Reservationbutton:hover {
+  background-color: #bc5878;
+}
+
+.BannerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  background-color: #fffacd; /* Amarillo clarito */
+  border-radius: 20px;
+  width: 80%; /* Ajusta el ancho del contenedor */
+  max-width: 800px; /* Máximo ancho del contenedor */
+  padding: 40px;
+  margin: 20px auto; /* Centra el contenedor horizontalmente */
+  text-align: center; /* Centra el texto */
+}
+
+.BannerText {
+  font-family: "Quicksand", serif;
+  color: #121214;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainBannerText {
+  font-weight: 1000;
+  font-size: 2em; /* Tamaño del texto principal */
+  margin-bottom: 20px;
+}
+
+.SecondBannerText {
+  font-weight: 300;
+}

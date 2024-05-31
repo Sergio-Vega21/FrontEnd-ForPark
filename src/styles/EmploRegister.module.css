@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.EmploRegister {
+  background: radial-gradient(circle, hsla(180, 46%, 87%, 1) 0%, hsla(198, 69%, 89%, 1) 100%);
+  padding: 20px;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.logocontainer {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  max-width: 300px;
+  height: auto;
+  max-height: 400px;
+}
+
+.formcontainer {
+  height: 335px;
+  position: relative;
+  z-index: 1;
+  padding: 4vw;
+  border-radius: 1vw;
+  overflow: hidden;
+  background-color: rgba(175, 206, 205, 0.75);
+  backdrop-filter: blur(2vw);
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  width: 60%;
+  max-width: 600px;
+  margin: 5% auto;
+  color: #1f3653;
+  text-align: center;
+}
+
+.formcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formcontainer h2 {
+  margin-bottom: 20px;
+}
+
+.inputfield {
+  border: none;
+  border-bottom: 2px solid #1f1f53;
+  background: transparent;
+  margin: 8px 0;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Quicksand", serif;
+}
+
+.registerButton {
+  background-color: #1f1f53;
+  color: #c6e5e5;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 1vw;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Quicksand", serif;
+  font-size: 16px;
+  margin-top: 0px;
+}
+
+.registerButton:hover {
+  background-color: #3cb0ee;
+}
+
+.linkButton {
+  background-color: transparent;
+  color: #1f1f53;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 0;
+  width: auto;
+  box-sizing: border-box;
+  font-family: "Quicksand", serif;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) and (min-width: 100px) {
+  .formcontainer {
+    width: 80%;
+    padding: 8vw;
+    border-radius: 5vw;
+    backdrop-filter: blur(3vw);
+  }
+  .formcontent {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .formcontainer {
+    width: 24rem;
+    padding: 6vw;
+    border-radius: 2vw;
+    backdrop-filter: blur(2vw);
+    margin-bottom: 2vw;
+  }
+  .formcontent {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .formcontainer {
+    width: 27rem;
+    padding: 4vw;
+    border-radius: 1vw;
+    backdrop-filter: blur(3vw);
+    margin-bottom: 2vw;
+  }
+}

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.AddParking {
+  background: radial-gradient(circle, hsla(180, 46%, 87%, 1) 0%, hsla(198, 69%, 89%, 1) 100%);
+  padding: 5px;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.logocontainer {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  max-width: 300px;
+  height: auto;
+  max-height: 400px;
+}
+
+.formcontainer {
+  height: 1000px;
+  position: relative;
+  z-index: 8;
+  padding: 1vw;
+  border-radius: 1vw;
+  overflow: hidden;
+  background-color: rgba(175, 206, 205, 0.9); /* Fondo más claro */
+  backdrop-filter: blur(2vw);
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  width: 20%;
+  max-width: 600px;
+  margin: 5% auto;
+  color: #1f3653;
+  text-align: center;
+}
+
+.formcontent {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+
+.formcontainer input[type="text"],
+.formcontainer input[type="number"],
+.formcontainer input[type="password"] {
+  border: none;
+  border-bottom: 2px solid #1f1f53;
+  background: transparent;
+  margin: 5px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Quicksand", serif;
+}
+
+.formcontainer button[type="submit"] {
+  background-color: #1f1f53;
+  color: #c6e5e5;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 1vw;
+  width: 103%;
+  box-sizing: border-box;
+  font-family: "Quicksand", serif;
+  font-size: 16px;
+  transform: translate(0%, 40%);
+}
+
+.formcontainer button[type="submit"]:hover {
+  background-color: #3cb0ee;
+}
+
+.linkButton {
+  background-color: transparent;
+  color: #1f1f53;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 0;
+  width: auto;
+  box-sizing: border-box;
+  font-family: "Quicksand", serif;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) and (min-width: 100px) {
+  .formcontainer {
+    width: 80%;
+    height: 30rem;
+    padding: 10vw;
+    border-radius: 5vw;
+    backdrop-filter: blur(3vw);
+  }
+  .formcontent {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .formcontainer {
+    width: 24rem;
+    height: 21rem;
+    padding: 8vw;
+    border-radius: 2vw;
+    backdrop-filter: blur(2vw);
+    margin-bottom: 2vw;
+  }
+  .formcontent {
+    font-size: 2vw;
+  }
+  .formcontainer p {
+    margin-top: 2vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .formcontainer {
+    width: 27rem;
+    height: 32rem;
+    padding: 5vw;
+    border-radius: 1vw;
+    backdrop-filter: blur(3vw);
+    margin-bottom: 2vw;
+  }
+}

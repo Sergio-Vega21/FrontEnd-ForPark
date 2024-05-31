@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.gerente {
+  background: radial-gradient(circle, hsla(180, 46%, 87%, 1) 0%, hsla(198, 69%, 89%, 1) 100%);
+  padding: 20px;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.logocontainer {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  width: 350px;
+  height: auto;
+}
+
+.formcontainer {
+  z-index: 1;
+  padding: 4vw;
+  border-radius: 1vw; 
+  overflow: hidden;
+  background-color: rgba(175, 206, 205, 0.75); 
+  backdrop-filter: blur(2vw);
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  width: 90%;
+  max-width: 600px;
+  margin-top: 100px; 
+  margin-bottom: 20px; 
+  color: #1f3653;
+  text-align: center;
+}
+
+.formcontainer h1 {
+  margin-bottom: 20px;
+}
+
+.actionButton,
+.exitButton {
+  background-color: #1f1f53; 
+  color: #c6e5e5; 
+  border: none;
+  padding: 10px 20px; 
+  cursor: pointer; 
+  border-radius: 1vw; 
+  width: 100%; 
+  box-sizing: border-box; 
+  font-family: "Quicksand", serif; 
+  font-size: 16px; 
+  margin-bottom: 10px;
+}
+
+.actionButton:hover {
+  background-color: #3cb0ee; 
+}
+
+.exitButton:hover {
+  background-color: #bbb;
+}
+
+
+@media (max-width: 768px) {
+  .formcontainer {
+    width: 80%;
+    padding: 3vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .formcontainer {
+    width: 90%;
+    padding: 2vw;
+    margin-top: 80px; 
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    width: 100px;
+  }
+}

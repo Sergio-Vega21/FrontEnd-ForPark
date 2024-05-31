@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.registration {
+  background: radial-gradient(circle, hsla(345, 97%, 73%, 1) 0%, hsla(41, 97%, 76%, 1) 50%);
+
+  padding: 20px;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.logocontainer {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  max-width: 400px;
+  height: auto;
+  max-height: 400px;
+}
+.formcontainer {
+  height: 250px;
+  position: relative;
+  z-index: 1;
+  padding: 4vw;
+  border-radius: 1vw; 
+  overflow: hidden;
+  background-color: rgba(255, 239, 170, 0.747); 
+  backdrop-filter: blur(2vw);
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  width: 20%;
+  max-width: 600px; 
+  margin: 5% auto;
+  color:#531f1f;
+  text-align: center;
+}
+
+.formcontent {
+  position: relative; 
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.formcontainer input[type="email"],
+.formcontainer input[type="text"],
+.formcontainer input[type="password"] {
+  border: none; 
+  border-bottom: 2px solid #531f1f; 
+  background: transparent; 
+  margin: 5px; 
+  padding: 8px; 
+  width: 100%; 
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Quicksand", serif; 
+  
+}
+
+.formcontainer button[type="submit"] {
+  background-color: #ddda7b; 
+  color: #531f1f; 
+  border: none;
+  padding: 10px 20px; 
+  cursor: pointer; 
+  border-radius: 1vw; 
+  width: 100%; 
+  box-sizing: border-box; 
+  font-family: "Quicksand", serif; 
+  font-size: 16px; 
+}
+
+.formcontainer button[type="submit"]:hover {
+  background-color: #eeb83c; 
+}
+
+.routbuttonER {
+  background-color: transparent; 
+  color: #eeb83c; 
+  border: none;
+  padding: 0; 
+  cursor: pointer;
+  border-radius: 0; 
+  width: auto;
+  box-sizing: border-box;
+  font-family: "Quicksand", serif;
+  font-size: 18px;
+  text-decoration: underline; 
+}
+
+
+@media screen and (max-width: 768px) and (min-width:100px){ /* Celulares */
+  .formcontainer {
+    width: 80%; 
+    height: 24rem;
+    padding: 10vw;
+    border-radius: 5vw; 
+    backdrop-filter: blur(3vw); 
+  }
+  .formcontent {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) { /* Tablets */
+  .formcontainer {
+    width: 24rem;
+    height: 21rem;
+    padding: 8vw;
+    border-radius: 2vw;
+    backdrop-filter: blur(2vw);
+    margin-bottom: 2vw; 
+  }
+  .formcontent {
+    font-size: 2vw;
+  }
+  .formcontainer p { 
+    margin-top: 2vw; 
+  }
+}
+
+
+@media screen and (min-width: 1024px) { /* Escritorio */
+  .formcontainer {
+    width: 27rem; 
+    height: 20rem;
+    padding: 3vw; 
+    border-radius: 1vw;
+    backdrop-filter: blur(3vw); 
+    margin-bottom: 2vw;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
