@@ -88,7 +88,7 @@ const RegisterSpecial = () => {
             <br />
             <ReCAPTCHA
               ref={recaptchaRef}
-              sitekey="TU_CLAVE_DEL_SITIO" // Reemplaza esto con tu clave de sitio de reCAPTCHA
+              sitekey="6LehPe0pAAAAAKtkSQv_Rz2gH-aE_4mO9gZFUIwy" // Reemplaza esto con tu clave de sitio de reCAPTCHA
             />
             <br />
             <button type="submit" className={styles.registerFbutton}>
